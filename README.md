@@ -3,4 +3,4 @@
  * Muhammad : Factorial
  * Aleix : Links
  * Sandeep : Randomness
- * Claudia : TODO
+ * Claudia : Collatz
