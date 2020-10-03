@@ -1,6 +1,5 @@
 import links
-import collatz
-from collatz import collatz_print
+from collatz import *
 
 def main():
     print("This is the program from group 14!")
@@ -8,14 +7,14 @@ def main():
     options = """    1. Factorial
     2. Randomness
     3. Links
-    4. Collatz"""
-    print(options)
+    4. Collatz"""    
 
     opt=""
     while (opt!="Q"):
+        print(options)
         opt=input("Enter choice (stop with Q): ")
         if (opt=="4"):
-            collatz_print()
+            collatz_prompt()
     
 
 if __name__ == "__main__":
