@@ -4,7 +4,7 @@ def is_link_live(url):
   try :
     urllib.request.urlopen(url, None, 4)
     return True
-  except URLError:
+  except (URLError, ValueError):
     return False
   
 def test_page_links(url):
@@ -15,3 +15,10 @@ def test_page_links(url):
 
 def extract_page_links(url):
   return []
+
+def links_prompt():
+  url = input("Enter a URL: ")
+  if is_link_live(url):
+    print("This link is live")
+  else:
+    print("This link is dead")
