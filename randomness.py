@@ -1,5 +1,18 @@
 import random
-#Part 1 : throwing the dice
+
+def randomness_prompt():
+    print("Please select one of the parts to run: ")
+    x=int(input("1.Throwing virtual dice \n2.Distribution of die results \n3.Graphical distribution of die results\n4.Loaded dice"))
+    if (x==1):
+        throwdice() 
+    elif (x==2):
+        distr()
+    elif (x==3):
+        graph()
+    elif(x==4):
+        loadedgraph()
+
+#Part 1 : throwing the virtual dice
 def throwdice():
     x =int(input("Enter a number of dice to throw: "))
     z=0
