@@ -1,7 +1,7 @@
 import links
 from collatz import *
 from randomness import *
-
+from factorial import *
 options = """  1. Factorial
   2. Randomness
   3. Links
@@ -18,13 +18,13 @@ def main():
         print_menu()
         opt=input("Enter choice (stop with Q): ")
         if (opt == "1"):
-          pass
+          factorial_prompt()
         elif(opt == "2"):
-            randomness_prompt()
+          randomness_prompt()
         elif (opt == "3"):
-            links.links_prompt()
+          links.links_prompt()
         elif (opt=="4"):
-            collatz_prompt()
+          collatz_prompt()
     
 
 if __name__ == "__main__":
